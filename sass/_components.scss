@@ -1,0 +1,157 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1rem 1.8rem;
+  border-radius: 3px;
+  font-family: $header-font;
+
+  &:active {
+    transform: translate(-3px, -3px);
+    transition: all 0.2s;
+  }
+
+  &--dark {
+    background-color: black;
+    color: $color-tertiary;
+  }
+  &--light {
+    background-color: black;
+    color: $color-secondary;
+  }
+
+  &--pricing {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(107, 38, 255, 0.8),
+      rgba(50, 18, 120, 0.801)
+    );
+    border-radius: 3rem;
+    color: $color-light;
+    width: 20rem;
+    font-size: 1.4rem;
+    padding: 1.8rem 0;
+    text-transform: capitalize;
+    font-family: $default-font;
+    text-align: center;
+
+    &:hover {
+      background-image: linear-gradient(to bottom right, #14a7cc, #1532d6);
+    }
+
+    &:active {
+      transform: translateY(-3px);
+    }
+  }
+  &--pricing-2 {
+    border: 1px solid rgba($color: #521ec5, $alpha: 1);
+    border-radius: 3rem;
+
+    width: 20rem;
+    font-size: 1.4rem;
+    padding: 1.8rem 0;
+    text-transform: capitalize;
+    font-family: $default-font;
+    text-align: center;
+    background: linear-gradient(to bottom right, #6a26ff, #321278);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      background-image: linear-gradient(to bottom right, #14a7cc, #1532d6);
+    }
+
+    &:active {
+      transform: translateY(-3px);
+    }
+  }
+  &--pricing-3 {
+    border: 1px solid rgba($color: #521ec5, $alpha: 1);
+    border-radius: 3rem;
+
+    width: 15rem;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    height: 5rem;
+    text-transform: capitalize;
+    font-family: $default-font;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(to bottom right, #6a26ff, #321278);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      background-image: linear-gradient(to bottom right, #14a7cc, #1532d6);
+    }
+
+    &:active {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.signup {
+  background-color: $color-secondary;
+  color: $color-light;
+}
+
+.cta {
+  background-color: $color-light;
+  color: $color-primary;
+  display: inline-block;
+  margin-right: 5rem;
+}
+
+.big-button {
+  display: flex;
+  padding: 1rem 0;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  background-color: $color-primary;
+  text-align: center;
+  transition: 0.2s;
+  color: $color-light;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: $default-font;
+  border-radius: 3px;
+
+  &--activated {
+    border-color: $color-secondary;
+  }
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  &:active {
+    transform: translateY(-3px);
+    transition: all 0.2s;
+  }
+}
+
+.down-arrow {
+  font-size: 5rem;
+  justify-self: center;
+
+  animation: arrow 1s ease-in 1s infinite;
+
+  @keyframes arrow {
+    0% {
+      transform: scale(1) translateY(0);
+    }
+    50% {
+      transform: scale(1.25) translateY(10px);
+    }
+
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+}

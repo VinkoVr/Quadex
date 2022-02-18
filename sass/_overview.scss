@@ -1,0 +1,117 @@
+.overview {
+  background-color: $color-tertiary;
+}
+
+.overview-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-row-gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 5rem;
+
+  border-bottom: $hr-dark;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.overview-title {
+  display: grid;
+  justify-content: start;
+  justify-items: start;
+  align-items: start;
+  align-content: start;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 3rem;
+  grid-template-rows: auto;
+
+  &__paragraph {
+    font-size: 1.6rem;
+    font-family: $default-font;
+    font-style: italic;
+  }
+}
+
+.overview-desc {
+  display: grid;
+  grid-auto-columns: 1fr;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 60vh auto;
+  &__img {
+    background-image: url("../img/overview-title.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.overview-2-columns {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+  margin-top: 5rem;
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    grid-row-gap: 5rem;
+  }
+
+  &__feature {
+    background-color: $color-primary;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    grid-template-rows: max-content 50vh;
+    overflow: hidden;
+    opacity: 0.9;
+    @media only screen and (max-width: $bp-largest) {
+      grid-template-rows: max-content 1fr;
+    }
+  }
+}
+
+.feature-1 {
+  width: 75%;
+  justify-self: center;
+  align-self: content;
+}
+.feature-2 {
+  width: 75%;
+  justify-self: center;
+  align-self: content;
+}
+
+.feature-text {
+  padding: 3rem 10rem;
+  color: $color-light;
+  z-index: 1;
+  &--span {
+    display: inline-block;
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    color: #c3b2ff;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem 3rem;
+  }
+}
+
+.feature {
+  width: 75%;
+  justify-self: center;
+  align-self: center;
+}
+
+.feature-4 {
+  width: 75%;
+  justify-self: center;
+  align-self: center;
+}

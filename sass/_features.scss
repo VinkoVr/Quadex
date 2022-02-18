@@ -1,0 +1,60 @@
+.features-section {
+  padding: 5rem;
+  background-color: $color-secondary;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.features {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 7rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    gap: 0;
+  }
+  &__block {
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    align-items: start;
+    align-content: start;
+    grid-auto-flow: column;
+    grid-column-gap: 7rem;
+    grid-auto-columns: 1fr;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      text-align: start;
+    }
+  }
+
+  &__icon {
+    font-size: 5rem;
+    align-self: center;
+    justify-self: center;
+    color: $color-light;
+  }
+
+  &__card {
+    display: grid;
+    text-align: center;
+  }
+
+  &__desc-header {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__desc {
+    font-family: $default-font;
+    font-size: 1.5rem;
+    color: #e4e4e4;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,19 @@
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.2),
+      rgba($color-primary, 0.4)
+    ),
+    url(../img/hero-optimized.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: $hr-dark;
+  &__menu {
+    padding: 5rem;
+    width: 50%;
+    display: grid;
+    align-items: flex-start;
+    align-content: space-between;
+  }
+}

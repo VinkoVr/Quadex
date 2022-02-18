@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="navigation">
+            <div class="container-nav">
+                <img class="navigation__img" src="img/logo.png" alt="Logo">
+                <nav class="navigation__links">
+                    <a href="index.html" class="btn navigation__links--nav-link">Home</a>
+                    <a href="about.html" class="btn navigation__links--nav-link">About</a>
+                    <a href="contact.html" class="btn navigation__links--nav-link">Contact</a>
+                    <a href="pricing.html" class="btn navigation__links--nav-link">Pricing</a>
+
+                </nav>
+                <div class="navigation__buttons">
+                    <a href="#" class="btn signup" data-modal-target="#modal">Get App</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="contact-us">
+            <div class="container-all">
+                <div class="contact-us__heading">
+                    <h4 class="heading-4">Interested in working in our company or have something to contact us about?
+                        Fill out
+                        the form bellow</h4>
+                </div>
+
+                <div class="form-container">
+                    <form action="">
+                        <div class="form">
+                            <div class="form_name">
+                                <input id="name" class="form__input" type="text" placeholder="Name" required>
+                                <label class="form__label" for="name">Your name*</label>
+                            </div>
+                            <div class="form__email">
+                                <input class="form__input" type="email" name="" id="" placeholder="email" required>
+                                <label class="form__label" for="name">Your email*</label>
+                            </div>
+                            <div class="form__url">
+                                <input class="form__input" type="url" name="" id="" placeholder="url">
+                                <label class="form__label" for="name">Your website</label>
+                            </div>
+                            <div class="form__date">
+                                <input class="form__input" type="date" name="" id="">
+                                <label class="form__label" for="name">Date</label>
+                            </div>
+                            <button class="btn cta" type="submit">Submit</button>
+
+
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <div class="modal " id="modal">
+            <div class="modal-header">
+                <div class="title">
+                    <h4 class="heading-4">Download</h4>
+                </div>
+                <button href="" class="btn signup close-button" data-close-button>&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <img src="img/Registration.svg" alt="Download image" class="register-form__img mb-sm">
+                <p class="p-default p-default--gradient download-form__text">First download our latest version of
+                    App.
+                </p>
+                <div class="register-form__buttons"> <button href="#" class="btn btn--pricing-3">
+                        <ion-icon class="download-form__logo" name="logo-google-playstore"></ion-icon> Download
+                    </button>
+                    <button href="#" class="btn btn--pricing-3">
+                        <ion-icon class="download-form__logo" name="logo-apple-appstore"></ion-icon>Download
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="overlay">
+
+        </div>
+
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="p-default p-default--light">Quadex. Web app made and designed by Vinko
+                    Vrdoljak.
+                    Copyright &copy; 2022. All rights reserved.</p>
+            </div>
+
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

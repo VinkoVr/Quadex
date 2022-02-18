@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="container-nav">
+            <img class="navigation__img" src="img/logo.png" alt="Logo">
+            <nav class="navigation__links">
+                <a href="index.html" class="btn navigation__links--nav-link">Home</a>
+                <a href="about.html" class="btn navigation__links--nav-link">About</a>
+                <a href="contact.html" class="btn navigation__links--nav-link">Contact</a>
+                <a href="pricing.html" class="btn navigation__links--nav-link">Pricing</a>
+
+            </nav>
+            <div class="navigation__buttons">
+                <a href="#" class="btn signup" data-modal-target="#modal">Get App</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pricing">
+        <div class="container-all">
+            <h3 class="heading-3 heading-3--dark">
+                A program for every need
+            </h3>
+            <div class="pricing__cards">
+                <div class="pricing__card">
+                    <h4 class="heading-4 heading-4--pricing mb-sm">Basic</h4>
+                    <h3 class="heading-3 heading-3--gradient mb-lg">$9.99/mo</h3>
+                    <p class="p-default p-default--gradient">1 crypto credit</p>
+                    <p class="p-default mb-sm p-default--gradient">10 crypto recommendations</p>
+                    <p class="p-default p-default--gradient">1 expert advice</p>
+                    <p class="p-default mb-sm p-default--gradient mb-lg">3 Quadex tokens</p>
+                    <a href="#" class="btn btn--pricing" data-modal-target="#modal">Purchase</a>
+                </div>
+                <div class="pricing__card">
+                    <h4 class="heading-4 heading-4--pricing mb-sm">Advanced</h4>
+                    <h3 class="heading-3 heading-3--gradient mb-lg">$19.99/mo</h3>
+                    <p class="p-default p-default--gradient">3 crypto credits</p>
+                    <p class="p-default mb-sm p-default--gradient">30 crypto recommendations</p>
+                    <p class="p-default p-default--gradient">2 expert advice</p>
+                    <p class="p-default mb-sm p-default--gradient mb-lg">10 Quadex tokens</p>
+                    <a href="#" class="btn btn--pricing-2" data-modal-target="#modal">Purchase</a>
+                </div>
+                <div class="pricing__card">
+                    <h4 class="heading-4 heading-4--pricing mb-sm">Advanced</h4>
+                    <h3 class="heading-3 heading-3--gradient mb-lg">$49.99/mo</h3>
+                    <p class="p-default p-default--gradient">10 crypto credits</p>
+                    <p class="p-default mb-sm p-default--gradient">100 crypto recommendations</p>
+                    <p class="p-default p-default--gradient">10 expert advice</p>
+                    <p class="p-default mb-sm p-default--gradient mb-lg">50 Quadex tokens</p>
+                    <a href="#" class="btn btn--pricing-2" data-modal-target="#modal">Purchase</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container-all">
+            <h2 class="heading-2 mb-lg">Frequently asked questions</h2>
+            <div class="column-2 mb-lg">
+                <div class="faq__text">
+                    <div class="heading-4 mb-md">Do you offer discounts?</div>
+                    <p class="p-default">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, nisi?
+                        Fugiat ab assumenda optio aspernatur maiores commodi in. Enim velit hic id aliquid quo quasi
+                        aspernatur nisi modi, illum maxime?</p>
+                </div>
+                <div class="faq__text">
+                    <div class="heading-4 mb-md">My app is not working</div>
+                    <p class="p-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem modi
+                        placeat voluptatum sed omnis laudantium libero? Quam pariatur nihil quaerat dignissimos officiis
+                        modi laudantium. Minima incidunt tempora dolorum libero?</p>
+                </div>
+            </div>
+            <div class="column-2 mb-md">
+                <div class="faq__text">
+                    <div class="heading-4 mb-md">How does the app work?</div>
+                    <p class="p-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem modi
+                        placeat voluptatum sed omnis laudantium libero? Quam pariatur nihil quaerat dignissimos officiis
+                        modi laudantium. Minima incidunt tempora dolorum libero?</p>
+                </div>
+                <div class="faq__text">
+                    <div class="heading-4 mb-md">Can i be a shareholder?</div>
+                    <p class="p-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatem modi
+                        placeat voluptatum sed omnis laudantium libero? Quam pariatur nihil quaerat dignissimos officiis
+                        modi laudantium. Minima incidunt tempora dolorum libero?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="modal " id="modal">
+        <div class="modal-header">
+            <div class="title">
+                <h4 class="heading-4">Download</h4>
+            </div>
+            <button href="" class="btn signup close-button" data-close-button>&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <img src="img/Registration.svg" alt="Download image" class="register-form__img mb-sm">
+            <p class="p-default p-default--gradient download-form__text">First download our latest version of
+                App.
+            </p>
+            <div class="register-form__buttons"> <button href="#" class="btn btn--pricing-3">
+                    <ion-icon class="download-form__logo" name="logo-google-playstore"></ion-icon> Download
+                </button>
+                <button href="#" class="btn btn--pricing-3">
+                    <ion-icon class="download-form__logo" name="logo-apple-appstore"></ion-icon>Download
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="overlay">
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="p-default p-default--light">Quadex. Web app made and designed by Vinko
+                Vrdoljak.
+                Copyright &copy; 2022. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

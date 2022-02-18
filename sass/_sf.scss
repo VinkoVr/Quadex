@@ -1,0 +1,129 @@
+.slick-features {
+  margin: 0 auto;
+  background-color: $color-quartary;
+}
+
+.number1 {
+  padding: 5rem;
+  border-bottom: $hr-dark;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.number1-columns {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  grid-column-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.number1-parts {
+  display: grid;
+  grid-row-gap: 3rem;
+  grid-template-columns: 1fr;
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 3rem;
+  }
+  &--size {
+    max-width: 40rem;
+  }
+  &__button {
+    justify-self: start;
+    opacity: 0.7;
+  }
+  &__img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+}
+
+.number1-parts-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.5rem;
+
+  &__p {
+    color: #1e721e;
+  }
+  &__heading {
+    color: #482c83;
+  }
+}
+
+.number2 {
+  padding: 5rem;
+  background-color: $color-quartary;
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+  }
+}
+
+.number-2-div-buttons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-row-gap: 2rem;
+    grid-auto-flow: row;
+  }
+}
+
+.number2-parts {
+  &__img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+}
+
+[data-w-content] {
+  opacity: 0;
+  display: none;
+}
+
+.active[data-w-content] {
+  opacity: 0;
+  display: block;
+}
+
+.active1[data-w-content] {
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+
+.schedule-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+  }
+
+  &__cards {
+    background-color: $color-tertiary;
+    border-radius: 2rem;
+    opacity: 0.8;
+    padding: 4rem 7rem;
+  }
+}
+
+.schedule-card-content {
+  &__list {
+    margin-top: 2rem;
+    list-style: none;
+  }
+}
