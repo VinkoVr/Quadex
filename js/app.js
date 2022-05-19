@@ -16,8 +16,8 @@ tabs.forEach((tab) => {
   });
 });
 
-// const revealClasses = document.querySelectorAll(".reveal");
-// window.addEventListener("scroll", reveal);
+const revealClasses = document.querySelectorAll(".reveal");
+window.addEventListener("scroll", reveal);
 
 function reveal() {
   revealClasses.forEach((item) => {
