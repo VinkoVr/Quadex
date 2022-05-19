@@ -12,6 +12,14 @@
   background-size: cover;
   border-bottom: $hr-dark;
   overflow: hidden;
+  @media only screen and (max-width: $bp-large) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.2),
+        rgba($color-primary, 0.4)
+      ),
+      url(../img/aboutPhone.jpg);
+  }
 }
 
 .about-text {

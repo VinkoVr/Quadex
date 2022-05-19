@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -53,7 +53,11 @@
                         nesciunt ea, officiis sapiente quasi repudiandae minima consectetur quaerat, tempora qui
                         voluptas libero accusamus tempore dolorem vero!</p>
                 </div>
-                <img class="about-us__img" src="img/about-us-img-1.jpg" alt="About us description">
+
+                <picture>
+                    <source media="(max-width: 480px)" srcset="/img/about-us-img-1Phone.jpg">
+                    <img class="about-us__img" src="/img/about-us-img-1.jpg" alt="About us description">
+                </picture>
             </div>
 
         </div>
@@ -63,9 +67,22 @@
         <div class="container-all reveal">
             <h2 class="heading-2">A team that creates amazing products</h2>
             <div class="team-box">
-                <img class="team__img" src="img/team-1.jpg" alt="Team 1"><img class="team__img" src="img/team-2.jpg"
-                    alt="Team 2"><img class="team__img" src="img/team-3.jpg" alt="Team 3"><img class="team__img"
-                    src="img/team-4.jpg" alt="Passion">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="/img/team-1Phone.jpg">
+                    <img class="team__img" src="/img/team-1.jpg" alt="Team 1">
+                </picture>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="/img/team-2Phone.jpg">
+                    <img class="team__img" src="/img/team-2.jpg" alt="Team 2">
+                </picture>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="/img/team-3Phone.jpg">
+                    <img class="team__img" src="/img/team-3.jpg" alt="Team 3">
+                </picture>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="/img/team-4Phone.jpg">
+                    <img class="team__img" src="/img/team-4.jpg" alt="Team ">
+                </picture>
             </div>
         </div>
     </section>

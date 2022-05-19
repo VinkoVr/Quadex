@@ -986,6 +986,15 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .hero-about {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(7, 34, 39, 0.2)), to(rgba(7, 34, 39, 0.4))), url(../img/aboutPhone.jpg);
+    background-image: -webkit-linear-gradient(left top, rgba(7, 34, 39, 0.2), rgba(7, 34, 39, 0.4)), url(../img/aboutPhone.jpg);
+    background-image: -o-linear-gradient(left top, rgba(7, 34, 39, 0.2), rgba(7, 34, 39, 0.4)), url(../img/aboutPhone.jpg);
+    background-image: linear-gradient(to right bottom, rgba(7, 34, 39, 0.2), rgba(7, 34, 39, 0.4)), url(../img/aboutPhone.jpg);
+  }
+}
+
 .about-text {
   display: -ms-grid;
   display: grid;
